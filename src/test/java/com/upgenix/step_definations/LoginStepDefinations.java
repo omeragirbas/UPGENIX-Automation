@@ -9,8 +9,10 @@ import io.cucumber.java.en.When;
 
 public class LoginStepDefinations {
     LoginPage loginPage=new LoginPage();
-
-
+    @Given("user is on the login page")
+    public void user_is_on_the_login_page() {
+        System.out.println("v");
+    }
     @When("user enters SalesManager username")
     public void user_enters_sales_manager_username() {
 
@@ -24,20 +26,15 @@ public class LoginStepDefinations {
 
     }
 
-
-
-    @When("user enters student PosManager")
-    public void user_enters_student_pos_manager() {
+    @When("user enters PosManager username")
+    public void user_enters_pos_manager_username() {
 
     }
-    @Then("user should see the PosManager")
-    public void user_should_see_the_pos_manager() {
+    @When("user enters PosManager password")
+    public void user_enters_pos_manager_password() {
 
     }
-    @Given("user is on the login page")
-    public void user_is_on_the_login_page() {
-        String url= ConfigurationReader.getProperty("web.table.url");
-        Driver.getDriver().get(url);
-    }
+
+
 
 }
