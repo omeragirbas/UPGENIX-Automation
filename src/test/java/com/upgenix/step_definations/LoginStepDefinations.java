@@ -11,7 +11,8 @@ public class LoginStepDefinations {
     LoginPage loginPage=new LoginPage();
     @Given("user is on the login page")
     public void user_is_on_the_login_page() {
-        System.out.println("v");
+        String url= ConfigurationReader.getProperty("web.table.url");
+        Driver.getDriver().get(url);
     }
     @When("user enters SalesManager username")
     public void user_enters_sales_manager_username() {
