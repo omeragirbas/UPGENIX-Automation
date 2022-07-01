@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Tag: @salesmanager</title>
+<title>Cucumber Reports  - Tag: @ac3s1</title>
 
 </head>
 <body>
@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>01 Jul 2022, 12:29</td>
+      <td>01 Jul 2022, 10:41</td>
     </tr>
   </tbody>
 </table>
@@ -126,20 +126,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@salesmanager</td>
-          <td      class="passed"    >4</td>
+          <td class="tagname">@ac3s1</td>
+          <td      class="passed"    >2</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">4</td>
+          <td class="total">3</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="5114768800">5.114</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="179103300">0.179</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,24 +171,24 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_965572540.html">US-004 Login Functionality</a>
+      <a href="report-feature_2750556433.html">US-004 Login Functionality</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_1780638048.html">@salesmanager</a>
+       <a href="report-tag_4072332782.html">@ac3s1</a>
 </div>
 
 
-  <span class="lead-duration duration">5.114</span>
+  <span class="lead-duration duration">0.179</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Login as SalesManager</span>
+  <span class="name">username empty User will see &quot;please fill out this field&quot;</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -197,16 +197,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -216,42 +216,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">user enters SalesManager username</span>
+  <span class="name">username empty</span>
 
-  <span class="lead-duration duration">0.088</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user enters SalesManager password</span>
-
-  <span class="lead-duration duration">0.075</span>
+  <span class="lead-duration duration">0.045</span>
 
 </div>
 
@@ -278,7 +251,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user click login button</span>
 
-  <span class="lead-duration duration">4.053</span>
+  <span class="lead-duration duration">0.096</span>
 
 </div>
 
@@ -301,11 +274,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">user should see the dashboard</span>
+  <span class="name">User sees please fill out this field text</span>
 
-  <span class="lead-duration duration">0.896</span>
+  <span class="lead-duration duration">0.037</span>
 
 </div>
 
@@ -313,6 +286,23 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>java.lang.AssertionError</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.upgenix.step_definations.wrongCredential.user_sees_please_fill_out_this_field_text(wrongCredential.java:50)
+	at &#10045;.User sees please fill out this field text(file:///C:/Users/agirb/IdeaProjects/UPGENIX-Automation/src/test/resources/features/acceptanceCriteria.feature:44)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 

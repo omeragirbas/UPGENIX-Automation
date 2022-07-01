@@ -16,13 +16,15 @@ Feature: US-004 Login Functionality
 
   Background: For the scenarios in the feature file, user is expected to be on login page
     Given user is on the login page
-
+@salesmanager
   Scenario: Login as SalesManager
     When user enters SalesManager username
     And user enters SalesManager password
+    And user click login button
     Then user should see the dashboard
-
+@posmanager
   Scenario: Login as PosManager
     When user enters PosManager username
     And user enters PosManager password
+  And user click login button
     Then user should see the dashboard
