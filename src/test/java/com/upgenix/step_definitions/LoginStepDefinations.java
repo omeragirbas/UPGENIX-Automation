@@ -1,9 +1,8 @@
-package com.upgenix.step_definations;
+package com.upgenix.step_definitions;
 
 import com.upgenix.pages.LoginPage;
 import com.upgenix.utilities.ConfigurationReader;
 import com.upgenix.utilities.Driver;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

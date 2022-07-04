@@ -22,6 +22,7 @@ Feature: US-004 Login Functionality
       | salesmanager32@info.com | salesmanager | SalesManager32 |
       | salesmanager33@info.com | salesmanager | SalesManager33 |
 
+
     @posmanagertable @UPGNX-330
     Examples:
       | username              | password   | expectedTitle |

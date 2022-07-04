@@ -1,4 +1,4 @@
-package com.upgenix.step_definations;
+package com.upgenix.step_definitions;
 
 import com.upgenix.pages.LoginPage;
 import com.upgenix.utilities.Driver;
@@ -11,15 +11,9 @@ import org.openqa.selenium.Keys;
 
 public class wrongCredential {
     LoginPage loginPage=new LoginPage();
-    @When("User gives invalid email in the email input box")
-    public void user_gives_invalid_email_in_the_email_input_box() {
-        loginPage.username.sendKeys("xyz");
 
-    }
-    @When("User gives valid password in the password input box")
-    public void user_gives_valid_password_in_the_password_input_box() {
-        loginPage.password.sendKeys("salesmanager");
-    }
+
+
     @And("user click login button")
     public void userClickLoginButton() {
         loginPage.loginBtn.click();
@@ -31,16 +25,8 @@ public class wrongCredential {
     }
 
 
-    @When("User gives valid email in the email input box")
-    public void user_gives_valid_email_in_the_email_input_box() {
-        loginPage.username.sendKeys("salesmanager15@info.com");
 
-    }
-    @When("User gives invalid password in the password input box")
-    public void user_gives_invalid_password_in_the_password_input_box() {
-        loginPage.password.sendKeys("abc");
 
-    }
 
     @When("username empty")
     public void username_empty() {
@@ -88,6 +74,18 @@ public class wrongCredential {
     @Then("user send key enter not click")
     public void userSendKeyEnterNotClick() {
         loginPage.loginBtn.sendKeys(Keys.ENTER);
+    }
+
+    @When("User gives email in the {string} input box")
+    public void userGivesEmailInTheInputBox(String arg0) {
+        loginPage.username.sendKeys(arg0);
+
+    }
+
+    @And("User gives password in the {string} input box")
+    public void userGivesPasswordInTheInputBox(String arg0) {
+        loginPage.password.sendKeys(arg0);
+
     }
 }
 
