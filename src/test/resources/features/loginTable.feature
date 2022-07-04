@@ -11,18 +11,24 @@ Feature: US-004 Login Functionality
     And user click login button
     Then User sees "<expectedTitle>" is in the username
 
-    @salesmanagertable
+    @salesmanagertable @UPGNX-329
     Examples: search value we are going to be using in this scenario is as below
       | username                | password     | expectedTitle  |
       | salesmanager15@info.com | salesmanager | SalesManager15 |
       | salesmanager20@info.com | salesmanager | SalesManager20 |
       | salesmanager25@info.com | salesmanager | SalesManager25 |
       | salesmanager30@info.com | salesmanager | SalesManager30 |
+      | salesmanager31@info.com | salesmanager | SalesManager31 |
+      | salesmanager32@info.com | salesmanager | SalesManager32 |
+      | salesmanager33@info.com | salesmanager | SalesManager33 |
 
-    @posmanagertable
+    @posmanagertable @UPGNX-330
     Examples:
       | username              | password   | expectedTitle |
-      | posmanager15@info.com | posmanager | posmanager15  |
-      | posmanager20@info.com | posmanager | posmanager20  |
-      | posmanager25@info.com | posmanager | posmanager25  |
-      | posmanager30@info.com | posmanager | posmanager30  |
+      | posmanager15@info.com | posmanager | POSManager15  |
+      | posmanager20@info.com | posmanager | POSManager20  |
+      | posmanager25@info.com | posmanager | POSManager25  |
+      | posmanager30@info.com | posmanager | POSManager30  |
+      | posmanager31@info.com | posmanager | POSManager31  |
+      | posmanager32@info.com | posmanager | POSManager32  |
+      | posmanager33@info.com | posmanager | POSManager33  |

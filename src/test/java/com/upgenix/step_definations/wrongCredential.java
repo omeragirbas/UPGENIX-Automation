@@ -81,7 +81,7 @@ public class wrongCredential {
     }
     @Then("User sees bullet sign in password line when text")
     public void userSeesBulletSignInPasswordLineWhenText() {
-        System.out.println(loginPage.password.getAttribute("type").equals("password"));
+        Assert.assertTrue(loginPage.password.getAttribute("type").equals("password"));
     }
 
 

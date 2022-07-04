@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/upgenix/step_definations" ,
         dryRun = false ,
-        tags = "@salesmanagertable"
+        tags = "@UPGNX-329 or @UPGNX-330"
 )
 public class CukesRunner  {
 
