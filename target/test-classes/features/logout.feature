@@ -13,13 +13,21 @@ Feature: US-005 Log out Functionality
 
 
      #AC1Logout
-  @logout
+  @logout @UPGNX-381
   Scenario: User can log out and ends up in login page.
     When User click on the username
+    And User verify logout link available
     And User click Log out
-    And user is on the login page
-    When verify page after logout click back
+    When verify page after logout and see login page
 
+    #AC2Logout
+  @logout2 @UPGNX-382
+  Scenario: The user can not go to the home page again by clicking the step back button after successfully logged out.
+    When User click on the username
+    And User click Log out
+    And verify page after logout and see login page
+    When user click step back icon
+    Then verify "Odoo Session Expired" message
 
 
 

@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>04 Jul 2022, 14:19</td>
+      <td>08 Jul 2022, 00:24</td>
     </tr>
   </tbody>
 </table>
@@ -127,9 +127,9 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@ac3s2</td>
-          <td      class="passed"    >3</td>
-          <td      class="failed"    >1</td>
           <td >0</td>
+          <td >0</td>
+          <td     class="skipped"   >4</td>
           <td >0</td>
           <td >0</td>
           <td class="total">4</td>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="247393800">0.247</td>
+          <td class="duration" data-value="1993500">0.001</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -182,7 +182,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.247</span>
+  <span class="lead-duration duration">0.001</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -221,11 +221,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given skipped">
   <span class="keyword indention">Given</span>
   <span class="name">write any text username</span>
 
-  <span class="lead-duration duration">0.053</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -248,11 +248,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">password empty</span>
 
-  <span class="lead-duration duration">0.073</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -275,11 +275,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user click login button</span>
 
-  <span class="lead-duration duration">0.089</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -302,11 +302,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">User sees please fill out this field text</span>
 
-  <span class="lead-duration duration">0.031</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -314,23 +314,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>java.lang.AssertionError</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at com.upgenix.step_definitions.wrongCredential.user_sees_please_fill_out_this_field_text(wrongCredential.java:38)
-	at &#10045;.User sees please fill out this field text(file:///C:/Users/agirb/IdeaProjects/UPGENIX-Automation/src/test/resources/features/acceptanceCriteria.feature:58)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -350,9 +333,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -362,36 +345,53 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-3" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.upgenix.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.079</span>
+  <span class="lead-duration duration">0.003</span>
 
           </div>
 
 
 
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
-      <a>password empty User will see &quot;please fill out this field&quot;</a>
-      <a href="embeddings/embedding_-1198041485.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-5" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1198041485.png">
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>Error message</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=103.0.5060.66)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-A6FL0U9', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\agirb\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51433}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 47d305dbac9d005a3add6a1793c7a106
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.upgenix.step_definitions.Hooks.teardownScenario(Hooks.java:31)
+</pre>
       </div>
     </div>
   </div>
-  </div>
+
+
+
+
 
         </div>
     </div>

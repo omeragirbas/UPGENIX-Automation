@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
-    public LoginPage(){
+public class Login_Logout_Page {
+    public Login_Logout_Page(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
     @FindBy(id = "login")
@@ -25,9 +25,12 @@ public class LoginPage {
     public WebElement usertext;
     @FindBy(xpath = "//a[@data-menu='logout']")
     public WebElement logout;
-    @FindBy(linkText = "Odoo")
-    public WebElement back;
     @FindBy(xpath = "//span[@class='oe_topbar_name']")
     public WebElement actualusername;
+    @FindBy(linkText = "Log out")
+    public static WebElement logverify;
+    @FindBy(className = "modal-title")
+    public WebElement alert;
+
 
 }
