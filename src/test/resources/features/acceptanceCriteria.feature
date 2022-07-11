@@ -1,3 +1,4 @@
+@UPGNX-286
 Feature: US-004 Login Functionality
   User Story:
 
@@ -17,27 +18,36 @@ Feature: US-004 Login Functionality
     Given user is on the login page
     #AC2
   @UPGNX-331
-  Scenario Outline:
+  Scenario Outline:Invalid username , valid password
     When User gives email in the "<email>" input box
     And User gives password in the "<password>" input box
     And user click login button
     Then User sees Wrong login, password text
-    @ac2s1
-    Examples:Invalid username , valid password
+    @ac2s1 @UPGNX-331
+    Examples:
       | email                | password     |
       | salesmana15@info.com | salesmanager |
       | salesmana20@info.com | salesmanager |
       | salesmana25@info.com | salesmanager |
-    @ac2s2
-    Examples:Valid username , invalid password
+    @ac2s2 @UPGNX-331
+    Scenario Outline:Valid username , invalid password
+      When User gives email in the "<email>" input box
+      And User gives password in the "<password>" input box
+      And user click login button
+      Then User sees Wrong login, password text
+    Examples:
       | email                   | password        |
       | salesmanager15@info.com | salesmanagerrr  |
       | salesmanager15@info.com | 123salesmanager |
       | salesmanager15@info.com | salesm223anager |
 
-    @ac2s3
-
-    Examples:Inalid username , invalid password
+    @ac2s3 @UPGNX-331
+    Scenario Outline:Inalid username , invalid password
+      When User gives email in the "<email>" input box
+      And User gives password in the "<password>" input box
+      And user click login button
+      Then User sees Wrong login, password text
+    Examples:
       | email                      | password          |
       | salesmanagwwer15@info.com  | salesmanagerrr34  |
       | salesccvmanager15@info.com | 123salesmana33ger |

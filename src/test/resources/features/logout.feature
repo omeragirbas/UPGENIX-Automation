@@ -1,3 +1,4 @@
+@UPGNX-297
 Feature: US-005 Log out Functionality
   User Story:
   AC1- User can log out and ends up in login page.

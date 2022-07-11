@@ -1,17 +1,18 @@
+@UPGNX-286  @UPGNX-2
 Feature: US-004 Login Functionality
   User Story:
   1-Users can log in with valid credentials (We have 5 types of users but will test only 2 user: PosManager, SalesManager)
 
   Background: For the scenarios in the feature file, user is expected to be on login page
     Given user is on the login page
-
+  @salesmanagertable @UPGNX-329
   Scenario Outline: Login with valid credential
     Given user write valid "<username>"
     When User types valid "<password>"
     And user click login button
     Then User sees "<expectedTitle>" is in the username
 
-    @salesmanagertable @UPGNX-329
+
     Examples: search value we are going to be using in this scenario is as below
       | username                | password     | expectedTitle  |
       | salesmanager15@info.com | salesmanager | SalesManager15 |
@@ -24,6 +25,11 @@ Feature: US-004 Login Functionality
 
 
     @posmanagertable @UPGNX-330
+    Scenario Outline: Login with valid credential
+      Given user write valid "<username>"
+      When User types valid "<password>"
+      And user click login button
+      Then User sees "<expectedTitle>" is in the username
     Examples:
       | username              | password   | expectedTitle |
       | posmanager15@info.com | posmanager | POSManager15  |
